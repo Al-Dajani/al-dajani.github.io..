@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RetardStation Club</title>
+  <style>
+    body {
+      background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    }
+    .header {
+      text-align: center;
+      margin-top: 200px;
+      font-size: 36px;
+      color: white;
+    }
+    .subheader {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 18px;
+      color: white;
+    }
+    .line {
+      margin-bottom: 20px;
+    }
+  </style>
+  <script>
+    function getRandomLink() {
+      var links = [
+        "https://warthunder.com/sa",
+        "https://www.autismspeaks.org/",
+        "https://warthunder.com/sa",
+        "https://www.autismspeaks.org/"
+      ];
+      var randomIndex = Math.floor(Math.random() * links.length);
+      return links[randomIndex];
+    }
+    function setRandomLink() {
+      var lineTwoLink = document.querySelector('.line-2 a');
+      lineTwoLink.href = getRandomLink();
+    }
+    window.addEventListener('DOMContentLoaded', setRandomLink);
+  </script>
+</head>
+<body>
+  <div class="header">
+    <h1>RetardStation Club</h1>
+  </div>
+  
+  <div class="subheader">
+    <p><a href="https://gta.fandom.com/wiki/Lester_Crest">Lester The Molester</a></p>
+    <p class="line-2"><a href="#">Monkey Raper</a></p>
+    <p><a href="https://en.wikipedia.org/wiki/Pedophilia">Up Syndrome Molester</a></p>
+  </div>
+  
+  <!-- Your website content goes here -->
+</body>
+</html>
