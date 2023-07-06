@@ -1,32 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>nuh uh</title>
-    <style>
-        body {
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            text-align: center;
-            padding: 100px 0;
-        }
-
-        h1 {
-            font-size: 88px;
-        }
-    </style>
+  <title>RetardStation Club</title>
+  <style>
+    body {
+      background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    }
+    .big-header {
+      text-align: center;
+      margin-top: 100px;
+      font-size: 48px;
+      color: white;
+    }
+    .header {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 36px;
+      color: white;
+    }
+    .subheader {
+      text-align: center;
+      margin-top: 20px;
+      color: white;
+    }
+    .subheader h3 {
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+    }
+    .subheader a {
+      color: white;
+      text-decoration: none;
+    }
+    .about-section {
+      text-align: center;
+      margin-top: 350px;
+      margin-bottom: 100px;
+      font-size: 24px;
+      color: white;
+      position: relative; /* Add this */
+    }
+    .about-gif {
+      position: absolute; /* Add this */
+      top: -250px; /* Adjust the position */
+      left: 50%; /* Adjust the position */
+      transform: translateX(-50%); /* Center horizontally */
+    }
+    .line-image {
+      display: inline-block;
+      width: 45px;
+      height: 35px;
+      margin-right: 10px;
+    }
+  </style>
+  <script>
+    function getRandomLink() {
+      var links = [
+        "https://warthunder.com/sa",
+        "https://warthunder.com/sa",
+        "https://www.autismspeaks.org/",
+        "https://www.autismspeaks.org/"
+      ];
+      var randomIndex = Math.floor(Math.random() * links.length);
+      return links[randomIndex];
+    }
+    function setRandomLink() {
+      var lineTwoLink = document.querySelector('.line-2 a');
+      lineTwoLink.href = getRandomLink();
+    }
+    window.addEventListener('DOMContentLoaded', setRandomLink);
+  </script>
 </head>
 <body>
-    <header>
-        <h1>nuh uh</h1>
-    </header>
-    
-    <!-- Your website content here -->
-    
+  <div class="big-header">
+    <h1>RETARD</h1>
+  </div>
+
+  <div class="header">
+    <h1>RetardStation Club</h1>
+  </div>
+  
+  <div class="subheader">
+    <h3><img class="line-image" src="https://i.scdn.co/image/ab67616d0000b27357626f905d61497d60a317c5"><a href="https://example1.com">Lester The Molester</a></h3>
+    <h3 class="line-2"><img class="line-image" src="https://m.media-amazon.com/images/M/MV5BNTM0NWQ4ZGYtMDA4NC00Y2M0LTg5Y2ItNTk5NzNlZTk5YmZiXkEyXkFqcGdeQXVyNzg5OTk2OA@@._V1_FMjpg_UX1000_.jpg"><a href="#">Monkey Raper</a></h3>
+    <h3><img class="line-image" src="https://res.cloudinary.com/dk-find-out/image/upload/q_80,w_1920,f_auto/MA_00600259_vpf1m0.jpg"><a href="https://en.wikipedia.org/wiki/Pedophilia">Up Syndrome Molester</a></h3>
+    <h3><img class="line-image" src="https://sandinmysuitcase.com/wp-content/uploads/2021/01/Popular-Indian-Food-Dishes.jpg.webp"><a href="https://www.madhuseverydayindian.com/">My name is Mr. Dicknballs</a></h3>
+    <h3><img class="line-image" src="https://p16-sign-sg.tiktokcdn.com/aweme/100x100/tos-alisg-avt-0068/692c078f58f7dd4b632eef980433c034.jpeg?x-expires=1688688000&x-signature=CjK71xwXb50aS%2FFeW%2BxeKc2vGGs%3D"><a href="https://www.tiktok.com/@bongwater79/video/7071141233619406123?_r=1&_t=8diSzscpT9N">Roblox Mugger</a></h3>
+  </div>
+  
+  <div class="about-section">
+    <h2>About Us</h2>
+    <p>Welcome to the RetardStation Club! We are a group of fun-loving individuals who enjoy spending time together and having a great time. Our club is all about spreading positivity, laughter, and creating lasting memories. Join us in our exciting adventures and be part of our close-knit community.</p>
+    <img class="about-gif" src="https://media.tenor.com/-4Q4yt7wyS8AAAAM/monkey-wtf-monkey-gasp.gif" alt="GIF" width="400" height="300">
+  </div>
+  
+  <!-- Your website content goes here -->
 </body>
 </html>
